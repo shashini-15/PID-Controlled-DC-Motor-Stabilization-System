@@ -130,7 +130,7 @@ PID-Motor-Control/
 ├── utils.py                # Filtering & helper functions
 ├── requirements.txt        # Dependencies
 └── README.md               # Project documentation
-
+```
 ## 📌 Conclusion
 
 This project demonstrates that a well-tuned PID controller on low-cost embedded hardware can achieve:
