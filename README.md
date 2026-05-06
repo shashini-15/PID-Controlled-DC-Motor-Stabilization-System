@@ -1,13 +1,13 @@
-🚀 PID-Controlled DC Motor Stabilization System
+## 🚀 PID-Controlled DC Motor Stabilization System
 
 A real-time PID speed control system for a 12V brushed DC motor implemented using a Raspberry Pi 4, designed as part of IE3034 – Control Systems Engineering.
 
-👥 Team & Module
+## 👥 Team & Module
 Module: IE3034_CSE (Control Systems Engineering)
 Student: L.A.S.S.S.Sampath (SLIIT | IT23619562)
 Project Name: PID-Controlled DC Motor Stabilization System
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project focuses on designing and implementing a closed-loop control system to stabilize the speed of a DC motor using a PID controller.
 
@@ -17,20 +17,23 @@ Models motor dynamics
 Implements real-time PID control
 Evaluates performance under disturbances
 Demonstrates robustness across varying conditions
-🎯 Objectives
+
+## 🎯 Objectives
 Achieve fast and stable motor speed control
 Minimize:
 Overshoot ≤ 15%
 Steady-state error ≤ 2%
 Ensure no sustained oscillations
 Optimize settling time
-⚙️ System Architecture
+
+## ⚙️ System Architecture
 Controller: Raspberry Pi 4
 Motor Driver: L298N H-Bridge
 Motor: 12V DC Motor with Encoder
 Feedback: Quadrature Encoder (150 PPR)
 Control Method: PWM-based PID control
-🧠 Control Strategy
+
+## 🧠 Control Strategy
 PID Controller
 
 The system uses a discrete PID controller:
@@ -45,13 +48,15 @@ Anti-windup protection
 Derivative noise filtering
 Base PWM to overcome motor deadband
 Overspeed safety cut-off
-📊 Key Results
+
+## 📊 Key Results
 Metric	Value
 Settling Time	~17.2 s
 Overshoot	4.27%
 Steady-State Error	0.75%
 Stability	✅ No oscillations
-🔬 System Modeling
+
+## 🔬 System Modeling
 
 The motor is approximated as a first-order system:
 
@@ -69,14 +74,16 @@ Where:
 
 Time constant (τ) = 0.40 s
 DC gain = 1.69 RPM/%
-🔧 Features
+
+## 🔧 Features
 ✅ Real-time PID control in Python
 ✅ Interrupt-based encoder reading
 ✅ Noise filtering (EMA + Moving Average)
 ✅ Disturbance rejection capability
 ✅ Robust to ±10% voltage variation
 ✅ Custom PCB implementation
-🧪 Testing & Validation
+
+## 🧪 Testing & Validation
 ✔ Setpoint Tracking
 Tested at: 130 RPM, 150 RPM, 170 RPM
 Maintained stable performance across all
@@ -87,7 +94,8 @@ Stable under:
 10.8V (-10%)
 12V (nominal)
 13.2V (+10%)
-🧩 Hardware Design
+
+## 🧩 Hardware Design
 
 Custom PCB includes:
 
@@ -95,19 +103,22 @@ Overcurrent protection (fuses)
 Decoupling capacitors
 PWM noise filtering
 Voltage divider (5V → 3.3V for GPIO safety)
-🖥️ Software
+
+## 🖥️ Software
 Language: Python
 Platform: Raspberry Pi OS
 Control Loop:
 Sampling time = 0.2 s
 PWM frequency = 1000 Hz
-👥 Team Members
+
+## 👥 Team Members
 Gunarathne M.
 Samaradiwakara K.D.M.M.S.
 Perera L.I.D.
 Dissanayake D.M.D.C.
 Sampath L.A.S.S.S.
-📁 Project Structure (example)
+
+## 📁 Project Structure (example)
 PID-Motor-Control/
 │── src/
 │   ├── pid_controller.py
@@ -121,13 +132,15 @@ PID-Motor-Control/
 │   ├── design_files
 │
 │── README.md
-📌 Conclusion
+
+## 📌 Conclusion
 
 This project demonstrates that a well-tuned PID controller on low-cost embedded hardware can achieve:
 
 High accuracy
 Strong robustness
 Reliable real-time performance
-📜 License
+
+## 📜 License
 
 This project is for academic purposes.
