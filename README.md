@@ -118,7 +118,9 @@ Perera L.I.D.
 Dissanayake D.M.D.C.
 Sampath L.A.S.S.S.
 
-## 📁 Project Structure 
+## 📁 Project Structure
+
+```bash
 PID-Motor-Control/
 ├── main.py                 # Main control loop (PID execution)
 ├── pid_controller.py       # PID algorithm implementation
