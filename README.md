@@ -118,20 +118,16 @@ Perera L.I.D.
 Dissanayake D.M.D.C.
 Sampath L.A.S.S.S.
 
-## 📁 Project Structure (example)
+## 📁 Project Structure 
 PID-Motor-Control/
-│── src/
-│   ├── pid_controller.py
-│   ├── encoder.py
-│   ├── motor_driver.py
-│
-│── docs/
-│   ├── report.pdf
-│
-│── pcb/
-│   ├── design_files
-│
-│── README.md
+├── main.py                 # Main control loop (PID execution)
+├── pid_controller.py       # PID algorithm implementation
+├── encoder.py              # Encoder pulse reading & RPM calculation
+├── motor_driver.py         # Motor control (PWM & direction)
+├── config.py               # System parameters (Kp, Ki, Kd, dt, etc.)
+├── utils.py                # Filtering & helper functions
+├── requirements.txt        # Dependencies
+└── README.md               # Project documentation
 
 ## 📌 Conclusion
 
